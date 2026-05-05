@@ -14,7 +14,7 @@ jobs:
   detect-changed-addons:
     if: >-
       ${{
-        github.repository_owner == 'Riza-Aslan' &&
+        github.repository_owner == 'alexbelgium' &&
         (github.event_name != 'push' || !contains(github.event.head_commit.message, 'nobuild'))
       }}
     runs-on: ubuntu-latest
